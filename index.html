@@ -2,13 +2,97 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Project Metamorphosis</title>
+    <title>Project Metamorphosis - My coding Journey</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel|Cormorant+Garamond|Cormorant+Unicase|Gaegu|Julius+Sans+One|Reenie+Beanie|Sunflower:300" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </head>
+  <style media="screen">
+  /* width */
+  ::-webkit-scrollbar {
+      width: 10px;
+  }
 
+  /* Track */
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+  }
+    #vertical-header {
+      float:left;
+      width:30%;
+      height:auto;
+      border-right:1px solid #C0C0C0;
+      padding:1vw 2vw;
+      text-align: center;
+      position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+      z-index: 1; /* Stay on top */
+      top: 0; /* Stay at the top */
+    }
+    #content-area  {
+      float:right;
+      width:70%;
+      padding:2vw 2vw;
+      text-align: center;
+    }
+    #dp {
+      border-radius: 50%;
+      border: 2px solid #2874A6;
+    }
+    #links {
+      font-family: Cinzel;
+      font-size: 1vw;
+    }
+    a:link, a:visited {
+      text-decoration: none;
+      padding: 4px;
+    }
+    a:hover, a:active {
+      color: #A9A9A9;
+    }
+  </style>
+  </head>
   <body>
-    <div class="jumbotron">
+    <div id="vertical-header">
+<!-- Main headings -->
+      <img href="F:\0000\project-metamorphosis\images\dp2.jpg" width="200" height="200" id="dp">
+      <h3 style="font-family:Amatic SC; font-size:4vw;">Project Metamorphosis</h3>
+      <p style="font-family:Gaegu; font-size:2vw;">Journalling my journey into code...</p>
+        <!-- links to other pages -->
+        <a href="#" id="links">Guide</a>
+        <a href="#" id="links">About</a>
+        <a href="#" id="links">Contact</a>
+        <br>
+        <br>
+        <p style="font-family:Julius Sans One">Here is what I am currently Upto:</p>
+<!-- iframe linking to the page with updates on what I am currently doing-->
+<iframe href="F:\0000\project-metamorphosis\otherpgs\current.html" width="320" height="130"></iframe>
+<br> <br>
+    </div>
+    <div id="content-area">
+      <h2 style="font-family:Cormorant Garamond">The Challenge: 77 Days of Coding.</h2>
+    <div class="col-md-3 col-lg-3 col-sm-4">
+      <div class="boxes">
+        <a href="/day1" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1" style="color:#2874A6">Day 1</h5>
+            <small style="color:#2874A6">10 june 2018</small>
+          </div>
+          <p class="mb-1">I decided to start this 77 day coding challenge.. This is all I could figure out today.</p>
+        </a>
+
+      </div>
+    </div>
+    </div>
+    <!-- <div class="jumbotron">
       <h1 class="display-3">Project Metamorphosis</h1>
 
       <p class="lead">
@@ -23,18 +107,18 @@
       <h2>Challenge status: </h2>
 
       <div class="list-group">
-
-        <!-- day1 -->
+    -->
+      <!--
         <a href="/day1" class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Day 1</h5>
-            <small>8 june 2018</small>
+            <small>9 june 2018</small>
           </div>
-          <p class="mb-1">I decided to start this 77 day coding challenge..</p>
+          <p class="mb-1">I decided to start this 77 day coding challenge.. This is all I could figure out today.</p>
         </a>
 
       </div>
 
-    </div>
+    </div> -->
   </body>
 </html>

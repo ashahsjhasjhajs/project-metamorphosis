@@ -1,9 +1,9 @@
-const express = require("express");
-const app = express();
-const port = process.env.PORT || 8080;
+const express = require("express"); //import express framework
+const app = express(); //create an app
+const port = process.env.PORT || 3000; //
 
 const contentPath = __dirname + "/content/";
-app.use(express.static(contentPath));
+app.use(express.static(contentPath)); //serving static assets
 
 // route main index.
 app.get("/", (req, res) => {
@@ -23,6 +23,6 @@ app.get("/*", (req, res) => {
 	res.sendFile(__dirname + "/index.html");
 });
 
-app.listen(port, () => {
-	console.log("listening on port: ", port);
+app.listen(port, () => { //opens a door in the server, whatever happens on that port, you get notified.
+	console.log("listening on port: http://www.localhost:" + port);
 });
